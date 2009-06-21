@@ -1,0 +1,3 @@
+gtktwitter.pl: little twitter demo with a counter
+alphademo.pl: demo on how to bring cairo and compositing together -
+requires a compositing manager running
