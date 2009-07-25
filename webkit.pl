@@ -3,9 +3,8 @@
 use strict;
 use warnings;
 
-use Gtk2 -init;
+use Gtk2 '-init';
 use Gtk2::WebKit;
-use Gtk2::Gdk::Keysyms;
 
 my $window = Gtk2::Window->new;
 $window->set_title("GtkPerl Mini Webkit");
