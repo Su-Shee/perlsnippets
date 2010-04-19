@@ -4,10 +4,10 @@ use strict;
 use warnings;
 
 use Gtk2 '-init';
-use Net::Twitter;
+use Net::Twitter::Lite;
 
-my $username = 'FOO';
-my $password = 'BAR';
+my $username = 'YOU@SOMEWHERE';
+my $password = 'YOURPASSWORD';
 
 my $window  = Gtk2::Window->new;
 
@@ -63,10 +63,10 @@ sub on_click {
     my ($widget, $event, $input) = @_;
     my $message = $input->get_text();
      
-    my $twit = Net::Twitter->new( {'username' => "$username",
-                                   'password' => "$password", } );
+    my $twit = Net::Twitter::Lite->new( 'username' => "$username",
+                                        'password' => "$password", );
 
-    my $status = $twit->update($message);
+    my $status = eval { $twit->update($message) };
 
     if($status) {
         empty_input_on_success(@_);
