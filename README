@@ -1,3 +1,12 @@
-gtktwitter.pl: little twitter demo with a counter
-alphademo.pl: demo on how to bring cairo and compositing together - requires a compositing manager running
-webkit.pl: webkit module wrapped in a handful of gtk widgets
+gtktwitter.pl: 
+little twitter demo with a counter
+
+alphademo.pl: 
+demo on how to bring cairo and compositing together - requires a compositing manager running
+
+webkit.pl: 
+webkit module wrapped in a handful of gtk widgets
+
+gtkperl-moretimer.pl, gtkperl-simpletimer.pl:
+how to display clocks and timers
+
